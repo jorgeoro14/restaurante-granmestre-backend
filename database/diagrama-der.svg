@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1960" height="2080" viewBox="0 0 1960 2080" font-family='Verdana, Geneva, "DejaVu Sans", sans-serif'>
+<rect width="1960" height="2080" fill="#ffffff"/>
+<rect x="250" y="28" width="1600" height="590" rx="30" fill="#E8F3FB" stroke="#8E9AA3" stroke-width="2"/>
+<text x="1050" y="64" text-anchor="middle" font-size="34" font-weight="700" fill="#1B4F72">SCHEMA: cadastros</text>
+<rect x="28" y="700" width="1420" height="1330" rx="30" fill="#FDF0E7" stroke="#8E9AA3" stroke-width="2"/>
+<text x="575" y="738" text-anchor="middle" font-size="34" font-weight="700" fill="#A04000">SCHEMA: transacoes</text>
+<rect x="310" y="140" width="425" height="406" fill="#E8F3FB" stroke="#5DADE2" stroke-width="3"/>
+<rect x="310" y="140" width="425" height="58" fill="#5DADE2"/>
+<text x="522.5" y="177.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">usuarios</text>
+<text x="326" y="235.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="378" y="235.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="378" y="293.0" font-size="22" fill="#000">nome : VARCHAR</text>
+<text x="326" y="351.0" font-size="22" font-weight="700" fill="#000">UQ</text>
+<text x="378" y="351.0" font-size="22" fill="#000">usuario : VARCHAR</text>
+<text x="378" y="409.0" font-size="22" fill="#000">senha : VARCHAR</text>
+<text x="378" y="467.0" font-size="22" fill="#000">tipo_usuario : VARCHAR</text>
+<text x="378" y="525.0" font-size="22" fill="#000">ativo : BOOLEAN</text>
+<rect x="900" y="170" width="411" height="348" fill="#E8F3FB" stroke="#5DADE2" stroke-width="3"/>
+<rect x="900" y="170" width="411" height="58" fill="#5DADE2"/>
+<text x="1105.5" y="207.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">tipos_marmita</text>
+<text x="916" y="265.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="968" y="265.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="968" y="323.0" font-size="22" fill="#000">nome : VARCHAR</text>
+<text x="968" y="381.0" font-size="22" fill="#000">descricao : VARCHAR</text>
+<text x="968" y="439.0" font-size="22" fill="#000">preco : DECIMAL(10,2)</text>
+<text x="968" y="497.0" font-size="22" fill="#000">ativo : BOOLEAN</text>
+<rect x="1420" y="200" width="385" height="290" fill="#E8F3FB" stroke="#5DADE2" stroke-width="3"/>
+<rect x="1420" y="200" width="385" height="58" fill="#5DADE2"/>
+<text x="1612.5" y="237.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">acompanhamentos</text>
+<text x="1436" y="295.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="1488" y="295.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="1488" y="353.0" font-size="22" fill="#000">nome : VARCHAR</text>
+<text x="1488" y="411.0" font-size="22" fill="#000">descricao : VARCHAR</text>
+<text x="1488" y="469.0" font-size="22" fill="#000">ativo : BOOLEAN</text>
+<rect x="110" y="930" width="385" height="348" fill="#FDF0E7" stroke="#E59B52" stroke-width="3"/>
+<rect x="110" y="930" width="385" height="58" fill="#EB984E"/>
+<text x="302.5" y="967.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">compras</text>
+<text x="126" y="1025.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="178" y="1025.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="178" y="1083.0" font-size="22" fill="#000">descricao : VARCHAR</text>
+<text x="178" y="1141.0" font-size="22" fill="#000">status : VARCHAR</text>
+<text x="178" y="1199.0" font-size="22" fill="#000">data_compra : DATE</text>
+<text x="126" y="1257.0" font-size="22" font-weight="700" fill="#000">FK</text>
+<text x="178" y="1257.0" font-size="22" fill="#000">usuario_id : INTEGER</text>
+<rect x="790" y="840" width="438" height="522" fill="#FDF0E7" stroke="#E59B52" stroke-width="3"/>
+<rect x="790" y="840" width="438" height="58" fill="#EB984E"/>
+<text x="1009.0" y="877.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">pedidos</text>
+<text x="806" y="935.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="858" y="935.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="806" y="993.0" font-size="22" font-weight="700" fill="#000">UQ</text>
+<text x="858" y="993.0" font-size="22" fill="#000">numero_pedido : INTEGER</text>
+<text x="858" y="1051.0" font-size="22" fill="#000">data_hora : TIMESTAMP</text>
+<text x="858" y="1109.0" font-size="22" fill="#000">status : VARCHAR</text>
+<text x="806" y="1167.0" font-size="22" font-weight="700" fill="#000">FK</text>
+<text x="858" y="1167.0" font-size="22" fill="#000">tipo_marmita_id : INTEGER</text>
+<text x="858" y="1225.0" font-size="22" fill="#000">observacao : VARCHAR</text>
+<text x="806" y="1283.0" font-size="22" font-weight="700" fill="#000">FK</text>
+<text x="858" y="1283.0" font-size="22" fill="#000">usuario_id : INTEGER</text>
+<text x="858" y="1341.0" font-size="22" fill="#000">impresso : BOOLEAN</text>
+<rect x="80" y="1590" width="505" height="406" fill="#FDF0E7" stroke="#E59B52" stroke-width="3"/>
+<rect x="80" y="1590" width="505" height="58" fill="#EB984E"/>
+<text x="332.5" y="1627.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">itens_compra</text>
+<text x="96" y="1685.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="148" y="1685.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="96" y="1743.0" font-size="22" font-weight="700" fill="#000">FK</text>
+<text x="148" y="1743.0" font-size="22" fill="#000">id_compras : INTEGER</text>
+<text x="148" y="1801.0" font-size="22" fill="#000">nome_produto : VARCHAR</text>
+<text x="148" y="1859.0" font-size="22" fill="#000">descricao_produto : VARCHAR</text>
+<text x="148" y="1917.0" font-size="22" fill="#000">quantidade_produto : NUMERIC</text>
+<text x="148" y="1975.0" font-size="22" fill="#000">status : VARCHAR</text>
+<rect x="760" y="1620" width="465" height="290" fill="#FDF0E7" stroke="#E59B52" stroke-width="3"/>
+<rect x="760" y="1620" width="465" height="58" fill="#EB984E"/>
+<text x="992.5" y="1657.0" text-anchor="middle" font-size="26" font-weight="700" fill="#ffffff">itens_pedido</text>
+<text x="776" y="1715.0" font-size="22" font-weight="700" fill="#000">PK</text>
+<text x="828" y="1715.0" font-size="22" fill="#000">id : SERIAL</text>
+<text x="776" y="1773.0" font-size="22" font-weight="700" fill="#000">FK</text>
+<text x="828" y="1773.0" font-size="22" fill="#000">pedido_id : INTEGER</text>
+<text x="776" y="1831.0" font-size="22" font-weight="700" fill="#000">FK</text>
+<text x="828" y="1831.0" font-size="22" fill="#000">acompanhamento_id : INTEGER</text>
+<text x="828" y="1889.0" font-size="22" fill="#000">quantidade : INTEGER</text>
+<path d="M360,560 C360,718.8 290,757.2 290,910" fill="none" stroke="#555" stroke-width="3"/>
+<line x1="349" y1="558" x2="371" y2="558" stroke="#555" stroke-width="6"/>
+<line x1="360" y1="546" x2="360" y2="560" stroke="#555" stroke-width="3"/>
+<path d="M276,930 L290,910 L304,930 M290,910 L290,930" fill="none" stroke="#555" stroke-width="3" stroke-linejoin="round"/>
+<text x="372" y="640" font-size="17" fill="#000">é responsável por  (1:N)</text>
+<path d="M690,560 C690,678.3 880,707.7 880,820" fill="none" stroke="#555" stroke-width="3"/>
+<line x1="679" y1="558" x2="701" y2="558" stroke="#555" stroke-width="6"/>
+<line x1="690" y1="546" x2="690" y2="560" stroke="#555" stroke-width="3"/>
+<path d="M866,840 L880,820 L894,840 M880,820 L880,840" fill="none" stroke="#555" stroke-width="3" stroke-linejoin="round"/>
+<text x="790" y="665" font-size="17" fill="#000">realiza  (1:N)</text>
+<path d="M1060,532 C1060,662.9 1060,695.1 1060,820" fill="none" stroke="#555" stroke-width="3"/>
+<line x1="1049" y1="530" x2="1071" y2="530" stroke="#555" stroke-width="6"/>
+<line x1="1060" y1="518" x2="1060" y2="532" stroke="#555" stroke-width="3"/>
+<path d="M1046,840 L1060,820 L1074,840 M1060,820 L1060,840" fill="none" stroke="#555" stroke-width="3" stroke-linejoin="round"/>
+<text x="1075" y="665" font-size="17" fill="#000">é do tipo  (1:N)</text>
+<path d="M1600,504 C1600,1111.5 1195,1450.5 1195,1600" fill="none" stroke="#555" stroke-width="3"/>
+<line x1="1589" y1="502" x2="1611" y2="502" stroke="#555" stroke-width="6"/>
+<line x1="1600" y1="490" x2="1600" y2="504" stroke="#555" stroke-width="3"/>
+<path d="M1181,1620 L1195,1600 L1209,1620 M1195,1600 L1195,1620" fill="none" stroke="#555" stroke-width="3" stroke-linejoin="round"/>
+<text x="1560" y="1125" font-size="17" fill="#000">é referenciado em  (1:N)</text>
+<path d="M330,1292 C330,1418.4 330,1449.6 330,1570" fill="none" stroke="#555" stroke-width="3"/>
+<line x1="319" y1="1290" x2="341" y2="1290" stroke="#555" stroke-width="6"/>
+<line x1="330" y1="1278" x2="330" y2="1292" stroke="#555" stroke-width="3"/>
+<path d="M316,1590 L330,1570 L344,1590 M330,1570 L330,1590" fill="none" stroke="#555" stroke-width="3" stroke-linejoin="round"/>
+<text x="360" y="1500" font-size="17" fill="#000">possui  (1:N)</text>
+<path d="M1060,1376 C1060,1478.1 1060,1503.9 1060,1600" fill="none" stroke="#555" stroke-width="3"/>
+<line x1="1049" y1="1374" x2="1071" y2="1374" stroke="#555" stroke-width="6"/>
+<line x1="1060" y1="1362" x2="1060" y2="1376" stroke="#555" stroke-width="3"/>
+<path d="M1046,1620 L1060,1600 L1074,1620 M1060,1600 L1060,1620" fill="none" stroke="#555" stroke-width="3" stroke-linejoin="round"/>
+<text x="930" y="1500" font-size="17" fill="#000">possui  (1:N)</text>
+<rect x="1475" y="1670" width="470" height="350" rx="14" fill="#ffffff" stroke="#B9C2C8" stroke-width="2"/>
+<text x="1493" y="1704" font-size="19" font-weight="700" fill="#333">Legenda</text>
+<text x="1493" y="1738" font-size="16" font-weight="700" fill="#000">PK</text>
+<text x="1537" y="1738" font-size="16" fill="#333">chave primária (SERIAL = auto incremento)</text>
+<text x="1493" y="1766" font-size="16" font-weight="700" fill="#000">FK</text>
+<text x="1537" y="1766" font-size="16" fill="#333">chave estrangeira</text>
+<text x="1493" y="1794" font-size="16" font-weight="700" fill="#000">UQ</text>
+<text x="1537" y="1794" font-size="16" fill="#333">valor único, sem repetição</text>
+<text x="1493" y="1846" font-size="16" font-weight="700" fill="#333">Valores fixos (enum no Java)</text>
+<text x="1493" y="1874" font-size="14" fill="#333">tipo_usuario: ADMIN, ATENDENTE, COZINHEIRO</text>
+<text x="1493" y="1898" font-size="14" fill="#333">pedidos.status: REGISTRADO, ENVIADO_PARA_COZINHA,</text>
+<text x="1493" y="1922" font-size="14" fill="#333">EM_PREPARO, PRONTO, FINALIZADO</text>
+<text x="1493" y="1946" font-size="14" fill="#333">itens_compra.status: PENDENTE, SOLICITADO,</text>
+<text x="1493" y="1970" font-size="14" fill="#333">COMPRADO, CANCELADO</text>
+<text x="1493" y="2002" font-size="14" fill="#555">numero_pedido vem da sequence pedido_numero_seq</text>
+</svg>
